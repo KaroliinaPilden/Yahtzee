@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,17 +12,39 @@
     html -> id, class, selector
     JS -> HTML element tüüpi muutujad
     JS veeretamine, 2. täringud muutuvad, 3. valid täringud, 4. kontroll veeretamise kordade arv, 5. valid kombinatsiooni https://www.youtube.com/watch?v=liklXgdYYJo-->
-    <div class= "board"><p>hey</p></div>
-    <div class= "sheet">
-        <table>
-            <tr><th>Ones</th><td>1</td><td>1</td></tr>
-            <tr><th>Twos</th><td>2</td><td>2</td></tr>
-            <tr><th>Threes</th><td>3</td><td>3</td></tr>
-            <tr><th>Fours</th><td>4</td><td>4</td></tr>
-            <tr><th>Fives</th><td>5</td><td>5</td></tr>
-            <tr><th>Sixes</th><td>6</td><td>6</td></tr>    
-        </table>
-    </div>        
-    <!-- https://www.codeproject.com/Articles/14587/JavaScript-Yahtzee -->
+    <div class="board">
+        <div  class="dice">
+            <img src="images/d1.png" alt="">
+            <img src="images/d2.png" alt="">
+            <img src="images/d3.png" alt="">
+            <img src="images/d4.png" alt="">
+            <img src="images/d5.png" alt="">
+        
+            
+        </div>
+        <div class="top-table">
+            <table>
+                <tr><th>Ones</th><td>1</td><td>1</td></tr>
+                <tr><th>Twos</th><td>2</td><td>2</td></tr>
+                <tr><th>Threes</th><td>3</td><td>3</td></tr>
+                <tr><th>Fours</th><td>4</td><td>4</td></tr>
+                <tr><th>Fives</th><td>5</td><td>5</td></tr>
+                <tr><th>Sixes</th><td>6</td><td>6</td></tr>
+                <tr style="border-top: 3px solid black;"><th>SUM</th><td>6</td><td>6</td></tr>  
+                <tr style="border-bottom: 3px solid black;"><th>Bonus</th><td>6</td><td>6</td></tr>  
+                <tr><th>Three of a kind</th><td>6</td><td>6</td></tr>
+                <tr><th>Four of a kind</th><td>6</td><td>6</td></tr>  
+                <tr><th>Full house</th><td>6</td><td>6</td></tr>  
+                <tr><th>Small straight</th><td>6</td><td>6</td></tr>  
+                <tr><th>Large straight</th><td>6</td><td>6</td></tr>  
+                <tr><th>Chance</th><td>6</td><td>6</td></tr>  
+                <tr><th>Yahtzee</th><td>6</td><td>6</td></tr>
+                <tr style="border: 3px solid black;"><th>TOTAL SCORE</th><td>6</td><td>6</td></tr>       
+            </table>
+            
+        </div>
+        
+    </div>
+    <button>roll</button>
 </body>
 </html>
