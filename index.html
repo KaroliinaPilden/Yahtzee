@@ -36,9 +36,9 @@
                     <td onClick="score('fives2')" id="fives2" >5</td></tr>
                 <tr><th>Sixes</th><td onclick="score('sixes1')" id="sixes1" >6</td>
                     <td onClick="scoreF('sixes2')" id="sixes2" >6</td></tr>
-                <tr style="border-top: 3px solid black;"><th>SUM</th><td onclick="sum()" id="sum1"></td>
+                <tr style="border-top: 3px solid black;"><th>SUM</th><td id="sum1"></td>
                     <td id="sum2">6</td></tr>  
-                <tr style="border-bottom: 3px solid black;"><th>Bonus</th><td>6</td><td>6</td></tr>  
+                <tr style="border-bottom: 3px solid black;"><th>Bonus</th><td id="bonus1">6</td><td>6</td></tr>  
                 <tr><th>Three of a kind</th><td>6</td><td>6</td></tr>
                 <tr><th>Four of a kind</th><td>6</td><td>6</td></tr>  
                 <tr><th>Full house</th><td>6</td><td>6</td></tr>  
@@ -52,8 +52,8 @@
         </div>
         
     </div>
-        <input type="number" id="score">
-        <p id="sum3" onclick="sum()">23</p>
-    <button onclick="roll()">roll</button><script src="yahtzee.js"></script>
+    <input type="number" id="score">
+    <button onclick="roll()">roll</button>
+    <script src="yahtzee.js"></script>
 </body>
 </html>
