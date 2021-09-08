@@ -1,29 +1,14 @@
 function roll() {
+    for(let i=1; i<6; i++) {
+    
     var randomNumber = Math.floor(Math.random() * 6 + 1); // 0-6
     var playerOneImages = "images/d"+randomNumber+".png";
 
-    document.getElementById("img1").setAttribute('src', playerOneImages);
-
-    var randomNumber = Math.floor(Math.random() * 6 + 1); // 0-6
-    var playerOneImages = "images/d"+randomNumber+".png";
-
-    document.getElementById("img2").setAttribute('src', playerOneImages);
-
-    var randomNumber = Math.floor(Math.random() * 6 + 1); // 0-6
-    var playerOneImages = "images/d"+randomNumber+".png";
-
-    document.getElementById("img3").setAttribute('src', playerOneImages);
-
-    var randomNumber = Math.floor(Math.random() * 6 + 1); // 0-6
-    var playerOneImages = "images/d"+randomNumber+".png";
-
-    document.getElementById("img4").setAttribute('src', playerOneImages);
-
-    var randomNumber = Math.floor(Math.random() * 6 + 1); // 0-6
-    var playerOneImages = "images/d"+randomNumber+".png";
-
-    document.getElementById("img5").setAttribute('src', playerOneImages);
+    document.getElementById("img" + i).setAttribute('src', playerOneImages);
+    console.log("img" + i)
+    } 
 }
+
 
 function score(id) {
     var x = document.getElementById("score").value;
