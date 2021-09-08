@@ -13,12 +13,21 @@ function roll() {
 function score(id) {
     var x = document.getElementById("score").value;
     document.getElementById(id).innerHTML = x;
+    sum();
 }
 
 function sum() {
     var y = +document.getElementById("ones1").innerText;
     var z = +document.getElementById("twos1").innerText;
+    var a = +document.getElementById("threes1").innerText;
+    var b = +document.getElementById("fours1").innerText;
+    var c = +document.getElementById("fives1").innerText;
+    var d = +document.getElementById("sixes1").innerText;
     console.log(y + z)
-    var u = +y + +z;
+    var u = y + z + a + b + c + d;
     document.getElementById("sum1").innerHTML = u;
+    if (u > 62) {
+        document.getElementById("bonus1").innerHTML = 35;
+    }
+    else document.getElementById.innerHTML = 0;
 }
